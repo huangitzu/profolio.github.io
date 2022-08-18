@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif; }
+
+body {
+  position: relative; }
+
+header nav {
+  width: 100%; }
+  header nav ul {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around; }
+    header nav ul li {
+      font-size: 1.75rem; }
+      header nav ul li a {
+        color: black;
+        text-decoration: none; }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+  main section.left {
+    flex: 3 0 500px; }
+    main section.left h1 {
+      font-size: 4rem;
+      color: #FFC300;
+      background-color: #FCF3CF;
+      padding: 2rem 2rem 0; }
+    main section.left h2 {
+      font-size: 1.25rem;
+      color: black;
+      font-weight: lighter;
+      background-color: #FCF3CF;
+      padding: 3rem 2rem; }
+    main section.left p {
+      font-size: 1.5rem;
+      padding: 1rem 2rem; }
+  main section.right {
+    flex: 1 1 600px;
+    position: relative; }
+    main section.right img {
+      border-radius: 50%;
+      box-shadow: 0 0 0 9px #EFC289;
+      background-color: #FCF3CF;
+      width: 20vw;
+      height: 25vw;
+      position: absolute;
+      top: 0.5vh;
+      right: 10vw;
+      transform: translate(-30%); }
+  main section.table {
+    flex: 3 1 500px;
+    padding: 2rem; }
+    main section.table table {
+      border-collapse: collapse;
+      margin: auto; }
+      main section.table table tr {
+        border-bottom: 2px solid grey;
+        transition: all 0.3s ease; }
+        main section.table table tr td {
+          padding: 1rem; }
+          main section.table table tr td ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; }
+          main section.table table tr td img {
+            height: 35px;
+            width: 35px; }
+        main section.table table tr td.icon1 {
+          display: inline-block; }
+        main section.table table tr:hover {
+          background-color: #FFFF99; }
+  main section.picture {
+    flex: 1 1 600px;
+    position: relative;
+    padding: 0 3rem; }
+    main section.picture img {
+      width: 30vw; }
+    main section.picture div.yellowRect {
+      width: 30vw;
+      height: 80vh;
+      background-color: #FFFF99;
+      position: absolute;
+      top: 30px;
+      left: 80px;
+      z-index: -1; }
+  main section.form {
+    flex: 1 1 600px; }
+    main section.form form {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1.5rem; }
+      main section.form form div {
+        margin: 0.25rem; }
+        main section.form form div label {
+          font-size: 1.5rem;
+          margin-right: 1rem; }
+        main section.form form div input,
+        main section.form form div textarea {
+          background-color: #FFFF99;
+          font-size: 1.25rem;
+          padding: 0.5rem 0.25rem;
+          border: none;
+          width: 90%; }
+        main section.form form div textarea {
+          vertical-align: top; }
+      main section.form form button {
+        align-self: center;
+        background-color: orange;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        border-radius: 10px; }
+  main div.line {
+    background-color: grey;
+    width: 2px; }
+  main section.contact {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem; }
+    main section.contact div.content h2 {
+      margin: 1rem 0; }
+
+footer {
+  padding: 2rem;
+  background-color: #FAE5D3;
+  height: 150px; }
+  footer a {
+    display: inline-block; }
+    footer a img {
+      height: 200%;
+      width: 100%;
+      position: relative;
+      top: 10px; }
+  footer p {
+    position: relative;
+    top: -40px; }
+
+.active {
+  color: #FFC300; }
+
+@media screen and (max-width: 1100px) {
+  header nav ul {
+    width: 100%;
+    flex-direction: column; }
+    header nav ul li {
+      padding: 0.5rem 0;
+      border-bottom: 2px solid grey; }
+
+  main section.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem; }
+    main section.right img {
+      position: static;
+      transform: none;
+      width: 37.5vw;
+      height: 50vw; }
+  main section.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main section.picture img {
+      width: 50vw; }
+    main section.picture div.yellowRect {
+      display: none; } }
+
+/*# sourceMappingURL=style.css.map */
